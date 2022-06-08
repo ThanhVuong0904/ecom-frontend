@@ -1,0 +1,112 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+$Soft-Blue: hsl(231, 69%, 60%);
+$Soft-Red: hsl(0, 94%, 66%);
+$Grayish-Blue: hsl(229, 8%, 60%);
+$Very-Dark-Blue: hsl(229, 31%, 21%);
+$TwitterBg: #3CF;
+$FacebookBg: #3B5998;
+$AppleBg: #000;
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);
+#map {
+     height: 100vh;
+}
+html {
+     font-size: 13px;
+}
+body {
+     font-family: 'Poppins', sans-serif;
+     font-family: 'Roboto Condensed', sans-serif;
+}
+img {
+     display: block;
+     max-width: 100%;
+}
+ul {
+     list-style: none;
+}
+a {
+     text-decoration: none;
+     color: unset;
+}
+p {
+     //bootstrap set mb
+     margin-bottom: 0;
+}
+.container {
+     max-width: 1440px;
+     padding: 0 20px;
+     margin: 0 auto;
+}
+
+.main {
+     margin-top: 170px;
+     min-height: 100vh;
+}
+
+.grid {
+     display: grid;
+}
+@each $val in $numbers {
+     .grid-col-#{$val} {
+          grid-template-columns: repeat($val,1fr);
+     }
+}
+
+@each $val in $numbers {
+     .grid-col-md-#{$val} {
+          grid-template-columns: repeat($val, 1fr);
+     }
+}
+ 
+@each $val in $numbers {
+     .grid-col-sm-#{$val} {
+          grid-template-columns: repeat($val, 1fr);
+     }
+}
+.grid-gap-20 {
+     grid-gap: 20px;
+}
+.section {
+     margin-top: 70px;
+     margin-bottom: 80px;
+     &-body {
+          margin-top: 70px;
+     }
+     &-title {
+          font-size: 2rem;
+          text-transform: capitalize;
+          text-align: center;
+     }
+}
+.h-729 {
+     height: 729px;
+}
+.modal-lg {
+     max-width: 1300px !important;
+}
+.modal-body {
+     padding: 0;
+}
+.amount {
+     background-color: #e8e8e8;
+     display: inline-block;
+     button {
+          font-size: 20px;
+          cursor: pointer;
+          padding: 10px;
+          background-color: transparent;
+          border: none;
+     }
+     input {
+          font-size: 18px;
+          border: none;
+          outline: none;
+          width: 50px;
+          text-align: center;
+          background-color: transparent;
+     }
+}

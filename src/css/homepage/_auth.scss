@@ -1,0 +1,71 @@
+.auth {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-items: center;
+     h3 {
+          margin-bottom: 50px;
+     }
+     &-form {
+          font-size: 16px;
+          padding: 50px 90px;
+          & input, button {
+               height: 40px;
+               font-size: 16px;
+          }
+     }
+     &-divider {
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          &-left {
+               height: 1px;
+               width: 100%;
+               background-color: #dbdbdb;
+          }
+          &-right {
+               height: 1px;
+               width: 100%;
+               background-color: #dbdbdb;
+          }
+          & span {
+               padding: 0 1rem;
+               color: #ccc;
+               text-transform: uppercase;
+               font-size: 13px;
+          }
+     }
+     &-social {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 30px;
+     }
+     &-facebook, &-twitter, &-apple {
+          flex: 1;
+          display: flex;
+          padding: 20px;
+          color: white;
+          & span {
+               margin-left: 5px;
+          }
+     }
+     &-facebook {
+          background-color: $FacebookBg;
+     }
+     &-twitter {
+          background-color: $TwitterBg;
+          margin: 0 20px;
+     }
+     &-apple {
+          background-color: $AppleBg;
+     }
+     &-ask {
+          text-align: center;
+          & a {
+               color: $Soft-Blue;
+          }
+     }
+}
+.form-group {
+     margin-bottom: 20px;
+}

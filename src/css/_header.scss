@@ -1,0 +1,104 @@
+.header {
+     position: fixed;
+     width: 100%;
+     top: 0;
+     height: 170px;
+     z-index: 99;
+     transition: height 0.3s ease;
+     background-color: white;
+     &.shrink {
+          height: 70px;
+          z-index: 100;
+     }
+     & .container {
+          display: flex;
+          align-items: center;
+          height: 100%;
+     }
+     &-menu {
+          margin-left: 50px;
+          display: flex;
+          font-size: 20px;
+          //bootstrap nó thêm mb
+          margin-bottom: 0;
+     }
+     &-item:not(:last-child) {
+          margin-right: 3rem;
+     }
+     &-link {
+          font-weight: 500;
+     }
+     &-link:hover {
+          color: $Soft-Blue;
+          transition: all 0.2s linear;
+     }
+     &-link.active {
+          color: $Soft-Blue;
+     }
+     &-action {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+          & svg {
+               cursor: pointer;
+               margin-left: 10px;
+               border-radius: 50%;
+               padding: 4px;
+               width: 35px;
+               height: 35px;
+          }
+          & svg:hover {
+               transition: all 0.2s linear;
+               background-color: #f5f6f7;
+          }
+          &-item {
+               position: relative;
+
+          }
+          & a:hover {
+               color: unset;
+          }
+     }
+     &-cart {
+          position: relative;
+          & span {
+               position: absolute;
+               right: -10px;
+               top: -7px;
+          }
+          &-message {
+               position: absolute;
+               width: 200px;
+               text-align: center;
+               font-size: 16px;
+               padding: 20px 5px;
+               right: 5px;
+               top: 36px;
+               background-color: $Soft-Blue;
+               color: white;
+          }
+     }
+     &-user {
+          
+          &-dropdown {
+               position: absolute;
+               background-color: white;
+               visibility: hidden;
+               opacity: 0;
+               width: 100%;
+               box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+               padding: 10px;
+               text-align: center;
+               & p:not(:last-child) {
+                    margin-bottom: 10px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #ccc;
+               }
+               &.active {
+                    transition: all 0.5s ease;
+                    opacity: 1;
+                    visibility: visible;
+               }
+          }
+     }
+}

@@ -1,0 +1,23 @@
+.policy {
+     &-card {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+          transition: all 0.5s ease;
+          cursor: pointer;
+          &:hover {
+               transform: translateY(-20px);
+          }
+          &-icon {
+               margin-right: 20px;
+          }
+          &-infor {
+
+               &-name {
+                    font-weight: 600;
+                    font-size: 1.25em;
+               }
+          }
+     }
+}

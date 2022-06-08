@@ -1,0 +1,21 @@
+.modal-success {
+     margin: 20px 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     & img {
+          width: 50px;
+          margin-bottom: 10px;
+     }
+     & p {
+          font-size: 16px;
+          margin-bottom: 10px;
+     }
+     & a {
+          font-size: 16px;
+          background-color: #231f20 !important;
+          color: white;
+          padding: 10px 20px;
+     }
+}

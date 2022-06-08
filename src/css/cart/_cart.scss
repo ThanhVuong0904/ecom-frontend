@@ -1,0 +1,105 @@
+.cart {
+     display: flex;
+     justify-content: space-between;
+     &-left {
+          width: 55%;
+          max-height: 550px;
+          overflow-y: auto;
+          &::-webkit-scrollbar {
+               width: 7px;
+          }
+          &::-webkit-scrollbar-track {
+               background: #e8e8e8;
+          }
+          &::-webkit-scrollbar-thumb {
+               background-color: #231f20;
+          }
+     }
+     &-item {
+          padding: 20px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid #e8e8e8;
+          display: flex;
+          position: relative;
+     }
+     &-info {
+          margin-left: 30px;
+          display: flex;
+          flex-direction: column;
+     }
+     &-name {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 5px;
+     }
+     &-size {
+          font-size: 15px;
+          margin-bottom: 5px;
+     }
+     &-price {
+          font-size: 16px;
+     }
+     &-destroy {
+          position: absolute;
+          right: 0;
+          cursor: pointer;
+          // display: inline-block;
+     }
+     &-right {
+          width: 35%;
+     }
+     &-order {
+          background-color: #f2f2f2;
+          padding: 28px;
+     }
+     &-image {
+          width: 120px;
+     }
+     &-noti {
+          color: #707070;
+          font-size: 16px;
+          margin-bottom: 10px;
+     }
+     &-total-sub, &-ship, &-total {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          font-weight: 400;
+          color: #231f20;
+          font-size: 16px;
+     }
+     &-total {
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: 300;
+     }
+     &-action {
+          margin-top: 40px;
+          text-align: center;
+     }
+     &-checkout {
+          display: block;
+          width: 100%;
+          padding: 15px 30px;
+          cursor: pointer;
+          background-color: #231f20;
+          color: white;
+          font-size: 16px;
+          text-transform: uppercase;
+          &:hover {
+               color: white;
+          }
+     }
+     &-back {
+          display: block;
+          font-size: 16px;
+          margin-top: 20px;
+          text-transform: uppercase;
+          text-decoration: underline;
+     }
+     & .amount {
+          margin-top: auto;
+          display: block;
+          width: 115px;
+     }
+}
